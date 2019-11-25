@@ -1,0 +1,1482 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'icomoon';
+    src        : url('../fonts/icomoon.eot?a2h322');
+    src        : url('../fonts/icomoon.eot?a2h322#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?a2h322') format('truetype'),
+        url('../fonts/icomoon.woff?a2h322') format('woff'),
+        url('../fonts/icomoon.svg?a2h322#icomoon') format('svg');
+    font-weight : normal;
+    font-style  : normal;
+    font-display: block;
+}
+
+/* ------公共样式--------- */
+
+
+* {
+    margin : 0;
+    padding: 0;
+}
+
+input,
+button {
+    outline: none;
+}
+
+.clearfix::after {
+    content   : "";
+    display   : block;
+    height    : 0;
+    clear     : both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.ftl {
+    float: left;
+}
+
+span {
+    font-family: "icomoon";
+}
+
+button {
+    font-family: "icomoon";
+}
+
+.ftr {
+    float: right;
+}
+
+i {
+    font-style : normal;
+    font-family: "icomoon";
+}
+
+a {
+    font-family    : "icomoon";
+    text-decoration: none;
+}
+
+a:hover {
+    color: #b4a078;
+}
+
+li {
+    list-style: none;
+}
+
+.w {
+    width : 1090px;
+    margin: 0 auto;
+}
+
+/* ----------顶部快捷导航栏开始---------- */
+.box-top {
+    height          : 36px;
+    background-color: #333;
+}
+
+.box-nva {
+    line-height: 36px;
+    height     : 36px;
+    margin     : 0 auto;
+}
+
+.box-nva .laba {
+    float              : left;
+    background-image   : url(../images/喇叭.gif);
+    background-repeat  : no-repeat;
+    background-position: 0 center;
+}
+
+.box-nva .laba a {
+    padding-left   : 20px;
+    color          : #b4a078;
+    font-size      : 12px;
+    text-decoration: underline;
+}
+
+.box-nva .laba a:hover {
+    color          : #fff;
+    text-decoration: none;
+}
+
+.box-nva .kuaijie {
+    height     : 36px;
+    line-height: 36px;
+}
+
+.box-nva .kuaijie a {
+    padding     : 0 12px;
+    color       : #ccc;
+    font-size   : 12px;
+    border-right: 1px solid #5c5c5c;
+}
+
+.box-nva .kuaijie a:hover {
+    color: #fff;
+}
+
+.box-nva .kuaijie .kuaijie-1 {
+    border: none;
+}
+
+/* ----------顶部快捷导航栏结束---------- */
+
+/* ----------顶部快捷搜索栏开始---------- */
+.box-yanxuan {
+    height          : 140px;
+    background-color: #fff;
+    box-shadow      : 0 0 3px 0 rgba(0, 0, 0, .2);
+}
+
+.box-yanxuan .box-sousuo {
+    position: relative;
+    height  : 140px;
+    width   : 1090px;
+}
+
+.box-sousuo h1 {
+    position: absolute;
+    top     : 25px;
+    left    : 0;
+}
+
+.box-sousuo h1 a {
+    display            : block;
+    width              : 124px;
+    height             : 60px;
+    font-size          : 0;
+    background-image   : url(../images/hxm_yan严选背景图.png);
+    background-position: 0 -201px;
+}
+
+.box-yanxuan .box-kuang {
+    position: absolute;
+    top     : 26px;
+    left    : 360px;
+    width   : 532px;
+    height  : 36px;
+}
+
+.box-sousuo .box-kuang input {
+    float                    : left;
+    width                    : 441px;
+    height                   : 36px;
+    color                    : #ccc;
+    border                   : 1px solid #b4a078;
+    border-right             : none;
+    outline                  : none;
+    border-top-left-radius   : 18px;
+    border-bottom-left-radius: 18px;
+}
+
+.box-sousuo .box-kuang .ssal {
+    float                     : right;
+    width                     : 90px;
+    height                    : 38px;
+    line-height               : 38px;
+    text-align                : center;
+    border-top-right-radius   : 19px;
+    border-bottom-right-radius: 19px;
+    color                     : #fff;
+    font-size                 : 16px;
+    background-color          : #b4a078;
+    cursor                    : pointer;
+}
+
+.box-sousuo .box-kuang .ssal:hover {
+    background-color: #C2AE8D;
+}
+
+.box-sousuo .car {
+    position     : absolute;
+    top          : 26px;
+    right        : 0;
+    border       : 1px solid #b4a078;
+    border-radius: 18px;
+    width        : 132px;
+    height       : 36px;
+    text-align   : center;
+    line-height  : 36px;
+    cursor       : pointer;
+}
+
+.box-sousuo .car:hover {
+    background-color: #F5F3EF;
+}
+
+.box-sousuo .car span {
+    font-size: 14px;
+    color    : #b4a078;
+}
+
+.box-sousuo .car i {
+    margin          : 9px 20px 0 0;
+    float           : right;
+    line-height     : 19px;
+    height          : 19px;
+    width           : 19px;
+    border-radius   : 50%;
+    background-color: red;
+    font-style      : normal;
+}
+
+.box-sousuo .aaa-3 a {
+    display     : inline-block;
+    padding     : 0 10px;
+    color       : #999;
+    font-size   : 12px;
+    border-right: 1px solid #ccc;
+}
+
+.box-sousuo .aaa-3 a:hover {
+    color: #b4a078;
+}
+
+.box-sousuo .aaa-3 {
+    position: absolute;
+    top     : 60px;
+    left    : 365px;
+}
+
+.box-sousuo .aaa-3 .aaa-4 {
+    color: #b4a078;
+}
+
+.box-sousuo ul {
+    position: absolute;
+    bottom  : 0;
+}
+
+.box-sousuo ul li {
+    float        : left;
+    padding-right: 43px;
+}
+
+.box-sousuo ul .list-1 {
+    display    : inline-block;
+    border-left: 1px solid #ccc;
+    height     : 14px;
+    width      : 2px;
+    margin-top : 5px;
+}
+
+.box-sousuo ul li a {
+    display       : block;
+    padding-bottom: 7px;
+    color         : #000;
+    font-size     : 14px;
+    font-weight   : 700;
+}
+
+.box-sousuo ul li a:hover {
+    color        : #b4a078;
+    border-bottom: 3px solid #b4a078;
+}
+
+.box-sousuo ul .list-2 a {
+    color        : #b4a078;
+    border-bottom: 3px solid #b4a078;
+}
+
+/* ----------顶部快捷搜索栏结束---------- */
+
+/* ----------大背景图开始 -------------*/
+.box_dbj {
+    position     : relative;
+    height       : 420px;
+    width        : 1920px;
+    margin       : 0 auto;
+    overflow     : hidden;
+    margin-bottom: 35px;
+}
+
+.box_dbj .dbj_img {
+    position: absolute;
+    width   : 600%;
+    top     : 0;
+    left    : 0;
+}
+
+.box_dbj .dbj_img li {
+    float: left;
+}
+
+.box_dbj .dbj_dw {
+    position: relative;
+    height  : 420px;
+}
+
+.dbj_dw .dbj_02 {
+    position: absolute;
+    bottom  : 4px;
+    left    : 455px;
+}
+
+.dbj_dw .dbj_02 li {
+    float : left;
+    margin: 0 8px 10px;
+}
+
+.dbj_dw .dbj_02 li button {
+    border-radius: 500px;
+    display      : block;
+    width        : 8px;
+    height       : 8px;
+    cursor       : pointer;
+    outline      : none;
+    border       : 1px solid #cecece;
+    background   : #fff;
+}
+
+.dbj_dw .dbj_02 li button:hover {
+    box-shadow: 0 0 0 4px #dfcead;
+    background: #a7936e;
+}
+
+.dbj_dw .mrz button {
+    box-shadow: 0 0 0 4px #dfcead;
+    background: #a7936e;
+}
+
+.box_dbj .al_l,
+.box_dbj .al_r {
+    width           : 50px;
+    height          : 50px;
+    font-size       : 26px;
+    color           : #fff;
+    background-color: #D0C4AF;
+    border          : none;
+    border-radius   : 50%;
+    cursor          : pointer;
+}
+
+.box_dbj .al_l {
+    position  : absolute;
+    top       : 50%;
+    margin-top: -25px;
+    left      : 330px;
+}
+
+.box_dbj .al_r {
+    position  : absolute;
+    top       : 50%;
+    margin-top: -25px;
+    right     : 330px;
+}
+
+.box_dbj .al_l:hover,
+.box_dbj .al_r:hover {
+    background-color: #B19E7A;
+}
+
+/* ----------大背景图结束 -------------*/
+
+/* ---------品牌制造商标头开始 ---------------*/
+.box_bp {
+    padding-bottom: 20px;
+}
+
+.box_bp .bp_bt_l {
+    float: left;
+}
+
+.box_bp .bp_bt_l h3 {
+    display     : inline-block;
+    margin-right: 20px;
+}
+
+.box_bp .bp_bt_l h3 a {
+    font-size  : 28px;
+    color      : #333;
+    font-weight: 700;
+}
+
+.box_bp .bp_bt_l h3 a:hover {
+    color: #b4a078;
+}
+
+.box_bp .bp_bt_l span {
+    padding-top: 13px;
+    font-size  : 14px;
+    color      : #333;
+    display    : inline-block;
+}
+
+.box_bp .bp_bt_r {
+    float: right;
+}
+
+.box_bp .bp_bt_r {
+    display    : inline-block;
+    margin-left: 30px;
+    padding-top: 14px;
+    font-size  : 14px;
+    color      : #333;
+}
+
+.box_bp .bp_bt_r:hover {
+    color: #b4a078;
+}
+
+/*------------ 品牌制造商标头结束------------- */
+
+/* ------------品牌制造商开始----------------- */
+.box_bp_one {
+    height       : 320px;
+    margin-bottom: 60px;
+}
+
+.box_bp_one .bp_tu01,
+.box_bp_one .bp_tu02 {
+    float : left;
+    width : 357px;
+    height: 320px;
+}
+
+.box_bp_one .bp_tu02 {
+    margin-left: 10px;
+}
+
+.box_bp_one .bp_tu03,
+.box_bp_one .bp_tu04 {
+    float : right;
+    width : 365px;
+    height: 155px;
+}
+
+.box_bp_one .bp_tu04 {
+    margin-top: 10px;
+}
+
+.box_bp_one .bp_tu01 {
+    background: url(../upload/porduct-1.png) no-repeat center center;
+}
+
+.box_bp_one .bp_tu02 {
+    background: url(../upload/product-2.png) no-repeat center right;
+}
+
+.box_bp_one .bp_tu03 {
+    background: url(../upload/product-3.png) no-repeat center right;
+}
+
+.box_bp_one .bp_tu04 {
+    background: url(../upload/product-4.png) no-repeat center right;
+}
+
+.box_bp_one a {
+    position  : relative;
+    text-align: center;
+}
+
+.box_bp_one a .bp_sp {
+    display  : block;
+    color    : #666666;
+    font-size: 24px;
+    margin   : 48px 0 19px;
+}
+
+.box_bp_one a .bp_sp02 {
+    position  : absolute;
+    top       : 50px;
+    right     : 86px;
+    display   : inline-block;
+    width     : 32px;
+    height    : 21px;
+    color     : #fff;
+    font-size : 11px;
+    background: url(../images/shangxin.png) no-repeat center center;
+}
+
+.box_bp_one a .bp_sp03 {
+    display    : inline-block;
+    font-size  : 14px;
+    padding-top: 17px;
+    color      : #666;
+    border-top : 1px solid #666;
+}
+
+.box_bp_one .bp_tu03 .bp_sp,
+.box_bp_one .bp_tu04 .bp_sp {
+    font-size  : 20px;
+    margin-left: -190px;
+}
+
+.box_bp_one .bp_tu03 .bp_sp03,
+.box_bp_one .bp_tu04 .bp_sp03 {
+    margin-left: -190px;
+}
+
+/*-------------- 品牌制造商结束 ---------------*/
+
+/* --------------新品首发部分开始 -------------*/
+.box_xb {
+    position        : relative;
+    height          : 420px;
+    width           : 1100px;
+    background-color: #fff;
+    cursor          : pointer;
+}
+
+.xb_tu01 {
+    position    : relative;
+    float       : left;
+    margin-right: 10px;
+    width       : 265px;
+    height      : 344.6px;
+}
+
+.box_xb .xb_tu01:hover {
+    background-color: #f4f0ea;
+}
+
+.box_xb .xb_tu01:hover .xb_bjt {
+    background: url(../upload/xptu01-1.png);
+}
+
+.box_xb .xb_tu01 .xb_bjt {
+    display         : block;
+    width           : 265px;
+    height          : 265px;
+    background      : url(../upload/xptu01.png);
+    background-color: #f4f4f4;
+}
+
+.box_xb .xb_tu01 .xb_tu01_b {
+    text-align: center;
+    width     : 265px;
+    height    : 71.6px;
+}
+
+.xb_tu01_x {
+    height  : 20px;
+    width   : 200px;
+    margin  : 0 auto 3px;
+    overflow: hidden;
+}
+
+.xb_tu01_b span {
+    display      : block;
+    color        : #333;
+    font-size    : 13px;
+    font-weight  : 700;
+    margin-bottom: 4px;
+}
+
+.xb_tu01_b span:hover {
+    color: #b4a078;
+}
+
+.xb_tu01_b p {
+    color    : #d4282d;
+    font-size: 13px;
+    padding  : 1px 0 9px;
+}
+
+.xb_tu01_s {
+    position        : absolute;
+    top             : 10px;
+    left            : 10px;
+    height          : 20px;
+    font-size       : 12px;
+    color           : #a7936e;
+    border          : 1px solid #b3a07d;
+    border-radius   : 5px;
+    padding         : 0 4px;
+    line-height     : 18px;
+    background-color: #f4f0ea;
+}
+
+.box_xb .al_l {
+    position: absolute;
+    top     : 100px;
+    left    : -60px;
+}
+
+.box_xb button {
+    width           : 50px;
+    height          : 50px;
+    font-size       : 26px;
+    color           : #fff;
+    background-color: #D0C4AF;
+    border          : none;
+    border-radius   : 50%;
+    cursor          : pointer;
+}
+
+.box_xb button:hover {
+    background-color: #B19E7A;
+}
+
+.box_xb .al_r {
+    position: absolute;
+    top     : 100px;
+    right   : -60px;
+}
+
+/* --------------新品首发部分结束 -------------*/
+
+/* ------------人气推荐部分开始------------ */
+.box_rq {
+    padding   : 40px 0;
+    background: #f4f0ea;
+}
+
+.rq_one {
+    height: 530px;
+    width : 1100px;
+}
+
+.rq_one .rq_one_datu>a {
+    display      : block;
+    width        : 390px;
+    height       : 320px;
+    border-bottom: 1px solid #F4F0EA;
+    background   : url(../upload/rqtu01.png) no-repeat center center;
+}
+
+.rq_one .rq_one_datu {
+    background-color: #fff;
+    float           : left;
+    margin-right    : 10px;
+    width           : 390px;
+    height          : 530px;
+    text-align      : center;
+}
+
+.rq_one_ss span {
+    display         : inline-block;
+    width           : 34px;
+    height          : 20px;
+    line-height     : 20px;
+    color           : #fff;
+    font-size       : 12px;
+    background-color: #e36844;
+}
+
+.rq_one_datu .rq_one_ss {
+    margin: 20px 0 10px;
+}
+
+
+.rq_one_datu h4 {
+    padding-bottom: 10px;
+}
+
+.rq_one_datu h4 a {
+    font-size: 18px;
+    color    : #333;
+}
+
+.rq_one_datu p {
+    margin-top: 10px;
+    font-size : 18px;
+    color     : #d4282d;
+}
+
+.rq_one_datu p del {
+    padding-left: 10px;
+    font-size   : 14px;
+    color       : #999;
+}
+
+.rq_one .rq_two {
+    background-color: #fff;
+    float           : left;
+    width           : 223px;
+    height          : 260px;
+    margin-bottom   : 10px;
+}
+
+.rq_one .rq_two>a {
+    width     : 223px;
+    height    : 180px;
+    background: url(../upload/rqtu02.png)no-repeat center center;
+}
+
+.rq_two h4 a {
+    font-size: 13px;
+    color    : #333;
+}
+
+.rq_two h4 {
+    padding-bottom: 3px;
+}
+
+.rq_two p {
+    margin-top: 3px;
+    font-size : 13px;
+}
+
+/* ------------人气推荐部分结束------------ */
+
+/* ------------福利社部分开始------------ */
+.box_fls {
+    height          : 526px;
+    background-color: #f4f0ea;
+    margin          : 60px 0 0;
+}
+
+
+.toubuss {
+    padding-top: 50px;
+}
+
+.fls_one img {
+    cursor: pointer;
+}
+
+.fls_two button {
+    width           : 30px;
+    height          : 30px;
+    font-size       : 10px;
+    color           : #fff;
+    background-color: #D0C4AF;
+    border          : none;
+    border-radius   : 50%;
+    cursor          : pointer;
+    display         : none;
+}
+
+.fls_one .fls_two:hover button {
+    display: block;
+}
+
+.fls_two {
+    position: relative;
+    float   : left;
+    width   : 224px;
+    height  : 376px;
+}
+
+.fls_two .al_l {
+    position: absolute;
+    top     : 50%;
+    left    : 10px;
+}
+
+.fls_two .al_r {
+    position: absolute;
+    top     : 50%;
+    right   : 10px;
+}
+
+.fls_zhong {
+    float           : left;
+    width           : 609px;
+    height          : 376px;
+    padding         : 0 17px 0 19px;
+    border-right    : 1px solid #F4F0EA;
+    background-color: #fff;
+}
+
+.fls_zhong .zhong_toubu {
+    display      : inline-block;
+    width        : 588px;
+    padding      : 19px 0 12px;
+    border-bottom: 1px solid #F4F0EA;
+}
+
+.fls_zhong span {
+    float    : left;
+    font-size: 16px;
+    color    : #333;
+}
+
+.fls_zhong a {
+    float    : right;
+    font-size: 12px;
+    color    : #333;
+}
+
+.fls_zhong a:hover {
+    color: #b4a078;
+}
+
+.fls_xia {
+    margin-top: 20px;
+}
+
+.fls_xia_tu {
+    float           : left;
+    margin          : 0 20px 20px 0;
+    width           : 284px;
+    height          : 130px;
+    background-color: #fff;
+}
+
+.fls_xia_tu>a {
+    float           : left;
+    width           : 130px;
+    height          : 130px;
+    background-color: #f4f0ea;
+}
+
+.fls_xia_zi {
+    float: left;
+
+    margin-left: 10px;
+}
+
+.fls_xia_zi>a {
+    padding-top: 8px;
+    font-size  : 14px;
+    color      : #333;
+}
+
+.fls_xia_zi p {
+    color    : #BE4141;
+    font-size: 14px;
+}
+
+.fls_xia_zi del {
+    color    : #A4A4A4;
+    font-size: 14px;
+}
+
+.fls_xia_qg {
+    float : left;
+    margin: 30px 0 0 10px;
+}
+
+.fls_xia_qg a {
+    width           : 88px;
+    height          : 26px;
+    color           : #fff;
+    text-align      : center;
+    line-height     : 26px;
+    font-size       : 12px;
+    background-color: #BE4141;
+    border          : 1px solid #D25A5A;
+    border-radius   : 2px;
+}
+
+.fls_xia_qg a:hover {
+    color           : #fff;
+    background-color: #da4f4f;
+}
+
+.fls_right_one {
+    float           : right;
+    width           : 180px;
+    height          : 188px;
+    padding         : 0 20px;
+    background-color: #fff;
+}
+
+.fls_right_two {
+    padding: 19px 0 12px;
+}
+
+.fls_right_two span {
+    float    : left;
+    font-size: 16px;
+    color    : #333;
+}
+
+.fls_right_two a {
+    float    : right;
+    font-size: 12px;
+    color    : #333;
+}
+
+.fls_right_two a:hover {
+    color: #b4a078;
+}
+
+.fls_right_three>a {
+    float           : left;
+    width           : 50px;
+    height          : 50px;
+    background-color: #f4f0ea;
+}
+
+.fls_right_four {
+    float        : right;
+    width        : 130px;
+    margin-bottom: 20px;
+    white-space  : nowrap;
+    overflow     : hidden;
+    text-overflow: ellipsis;
+}
+
+.fls_right_four a {
+    margin   : 4px 0 14px;
+    font-size: 14px;
+    color    : #333;
+}
+
+.fls_right_four a:hover {
+    color: #b4a078;
+}
+
+.fls_right_four p {
+    float      : left;
+    padding-top: 8px;
+    color      : #BE4141;
+    font-size  : 14px;
+}
+
+.fls_right_four i {
+    float           : right;
+    font-size       : 12px;
+    text-align      : center;
+    line-height     : 24px;
+    color           : #b4a078;
+    width           : 24px;
+    height          : 24px;
+    background-color: #f4f0ea;
+    border-radius   : 50%;
+    cursor          : pointer;
+}
+
+/* ------------福利社部分结束------------ */
+
+
+/*------------ 居家生活部分开始 -----------*/
+.box_jj {
+    margin: 60px 0;
+}
+
+.jj_bt {
+    float      : right;
+    padding-top: 12px;
+}
+
+.jj_bt a {
+    font-size: 14px;
+    color    : #333;
+}
+
+.jj_bt a:hover {
+    color: #b4a078;
+}
+
+.jj_bt b {
+    color    : #333;
+    font-size: 14px;
+    margin   : 0 12px;
+}
+
+.jj_tu {
+    position     : relative;
+    margin-bottom: 20px;
+}
+
+.jj_tu button {
+    width           : 50px;
+    height          : 50px;
+    font-size       : 26px;
+    color           : #fff;
+    background-color: #D0C4AF;
+    border          : none;
+    border-radius   : 50%;
+    cursor          : pointer;
+}
+
+.jj_tu button:hover {
+    background-color: #B19E7A;
+}
+
+.jj_tu .al_l {
+    position: absolute;
+    top     : 130px;
+    left    : 0;
+}
+
+.jj_tu .al_r {
+    position: absolute;
+    top     : 130px;
+    right   : 0;
+}
+
+.jj_tu ul {
+    position: absolute;
+    left    : 504px;
+    bottom  : 4px;
+}
+
+.jj_tu ul li {
+    float           : left;
+    width           : 8px;
+    height          : 8px;
+    margin          : 0 8px 10px;
+    background-color: #fff;
+    border-radius   : 50%;
+    cursor          : pointer;
+}
+
+.jj_tu .jj_tu_xia {
+    box-shadow      : 0 0 0 4px #dfcead;
+    background-color: #a7936e;
+}
+
+.jj_tu ul li:hover {
+    box-shadow      : 0 0 0 4px #dfcead;
+    background-color: #a7936e;
+}
+
+.box_zx .zx_one {
+    float: left;
+}
+
+.box_zx .zx_two,
+.box_zx .zx_three {
+    float        : right;
+    margin-bottom: 10px;
+}
+
+/*------------ 居家生活部分结束 -----------*/
+
+/*------------- 大家都在说部分开始--------- */
+.box_djs {
+    height          : 530px;
+    background-color: #f4f0ea;
+    padding         : 60px 0;
+}
+
+.djs_one {
+    position: relative;
+}
+
+.djs_one ul {
+    width: 1100px;
+}
+
+.djs_one ul li {
+    position    : relative;
+    float       : left;
+    margin-right: 10px;
+}
+
+.djs_one button {
+    width           : 50px;
+    height          : 50px;
+    font-size       : 26px;
+    color           : #fff;
+    background-color: #D0C4AF;
+    border          : none;
+    border-radius   : 50%;
+    cursor          : pointer;
+}
+
+.djs_one .al_l {
+    position: absolute;
+    top     : 160px;
+    left    : -60px;
+}
+
+.djs_one .al_r {
+    position: absolute;
+    top     : 160px;
+    right   : -60px;
+}
+
+.djs_one button:hover {
+    background-color: #B19E7A;
+}
+
+.djs_fff {
+    position        : absolute;
+    left            : 5px;
+    bottom          : -110px;
+    width           : 315px;
+    height          : 146.2px;
+    padding         : 20px 15px;
+    background-color: #fff;
+}
+
+.djs_fff .djs_p01 {
+    font-size: 13px;
+    color    : #999;
+}
+
+.djs_lll {
+    margin: 15px 0 20px;
+}
+
+.djs_lll .djs_p03 {
+    float      : left;
+    font-size  : 16px;
+    color      : #333;
+    font-weight: 700;
+}
+
+.djs_lll .djs_p04 {
+    float    : right;
+    font-size: 13px;
+    color    : #b4a078;
+}
+
+.djs_fff .djs_p02 {
+    font-size: 13px;
+    color    : #333;
+}
+
+/*------------- 大家都在说部分结束--------- */
+
+
+/* -----------底部客服服务部分开始--------- */
+.box_kffw {
+    padding-top     : 60px;
+    padding-bottom  : 34px;
+    background-color: #fff;
+    border-top      : 1px solid #e8e8e8;
+}
+
+.kffw_one {
+    height: 204px;
+}
+
+.kffw_two {
+    float       : left;
+    width       : 362px;
+    height      : 204px;
+    border-right: 1px solid #e9e9e9;
+}
+
+.kffw_two h4 {
+    text-align   : center;
+    color        : #333;
+    font-size    : 16px;
+    font-weight  : 400;
+    margin-bottom: 28px;
+}
+
+.kffw_two a {
+    display         : inline-block;
+    text-align      : center;
+    width           : 78px;
+    height          : 73px;
+    padding-top     : 25px;
+    background-color: #fff;
+    border          : 1px solid #E8E8E8;
+}
+
+.kffw_two .kffw_al {
+    float      : left;
+    margin-left: 85px;
+}
+
+.kffw_two .kffw_al:hover i,
+.kffw_two .kffw_al:hover .kkkk {
+    color: #b4a078;
+}
+
+.kffw_al i {
+    font-size: 30px;
+    color    : #333;
+}
+
+.kffw_two .kffw_ar {
+    float       : right;
+    margin-right: 85px;
+}
+
+.kkkk {
+    margin-top: 15px;
+    font-size : 14px;
+    color     : #333;
+}
+
+.kffw_ar i {
+    font-size: 30px;
+    color    : #333;
+}
+
+.kffw_two .kffw_ar:hover i,
+.kffw_two .kffw_ar:hover .kkkk {
+    color: #b4a078;
+}
+
+.kffw_three {
+    float       : left;
+    width       : 289px;
+    height      : 204px;
+    padding     : 0 37px;
+    border-right: 1px solid #e9e9e9;
+}
+
+.kffw_three h4 {
+    text-align   : center;
+    margin-bottom: 28px;
+    font-size    : 16px;
+    color        : #333;
+    font-weight  : 400;
+}
+
+.kffw_three>p {
+    font-size    : 13px;
+    color        : #333;
+    margin-bottom: 22px;
+}
+
+.kffw_four span {
+    font-size   : 14px;
+    color       : #333;
+    margin-right: 15px;
+}
+
+.kffw_four i {
+    display    : inline-block;
+    margin-left: 10px;
+    width      : 32px;
+    height     : 32px;
+}
+
+.i01 {
+    background: url(../images/yanxuanbeijing02.png) no-repeat 0 -470px;
+}
+
+.i02 {
+    background: url(../images/yanxuanbeijing02.png) no-repeat 0 -428px;
+}
+
+.i03 {
+    background: url(../images/yanxuanbeijing02.png) no-repeat 0 -326px;
+    cursor    : pointer;
+}
+
+.kffw_five {
+    float     : left;
+    text-align: center;
+    width     : 363px;
+    height    : 204px;
+}
+
+.kffw_five h4 {
+    font-size    : 16px;
+    font-weight  : 400;
+    color        : #333;
+    margin-bottom: 28px;
+}
+
+.five_tu img {
+    width : 104px;
+    height: 104px;
+}
+
+.five_zi {
+    color     : #b4a078;
+    font-size : 12px;
+    margin-top: 3px;
+}
+
+/* -----------底部客服服务部分结束--------- */
+
+/*------------- 页面底部部分开始------------ */
+.box_dibu {
+    height          : 250px;
+    padding-top     : 37px;
+    background-color: #414141;
+}
+
+.dibu_one ul {
+    width        : 1090px;
+    padding-left : 17px;
+    margin-bottom: 30px;
+}
+
+.dibu_one ul li {
+    float       : left;
+    margin-right: 100px;
+}
+
+.dibu_li01 i {
+    float       : left;
+    width       : 50px;
+    height      : 50px;
+    margin-right: 17px;
+    background  : url(../images/yanxuanbeijing02.png) no-repeat 0 -134px;
+}
+
+.dibu_li01 span {
+    float      : left;
+    height     : 50px;
+    line-height: 50px;
+    font-size  : 18px;
+    color      : #fff;
+}
+
+.dibu_xian {
+    border-bottom: 1px solid #4f4f4f;
+    margin-bottom: 27px;
+}
+
+.dibu_two {
+    text-align: center;
+}
+
+.dibu_three a {
+    color    : #999;
+    font-size: 12px;
+}
+
+.dibu_three a:hover {
+    color: #fff;
+}
+
+.dibu_three span {
+    color    : #999;
+    font-size: 12px;
+    margin   : 0 10px;
+}
+
+.dibu_two p {
+    color    : #999;
+    font-size: 12px;
+}
+
+.dibu_two p img {
+    width         : 23px;
+    height        : 25px;
+    vertical-align: middle;
+}
+
+/*------------- 页面底部部分结束------------ */
+
+/*-------------- 左侧顶位部分开始------------ */
+
+.box_body {
+    position: relative;
+}
+
+.box_zou {
+    position: fixed;
+    top     : 62px;
+    left    : 62px;
+}
+
+.box_zou ul {
+    width           : 110px;
+    border          : 1px solid #E2DED6;
+    background-color: #fff;
+    border-top      : none;
+    border-bottom   : none;
+}
+
+.box_zou ul li {
+    padding: 3px 11px 0;
+}
+
+
+.box_zou li img {
+    float : left;
+    width : 30px;
+    height: 30px;
+}
+
+.ce_li01 {
+    background             : url(../images/ce666.png) bottom no-repeat;
+    font-size              : 16px;
+    color                  : #BB3343;
+    text-align             : center;
+    line-height            : 38px;
+    height                 : 38px;
+    border-top-right-radius: 4px;
+    border-top-left-radius : 4px;
+    font-weight            : 700;
+}
+
+.box_zou .ce_li02 {
+    padding-bottom: 5px;
+    border-bottom : 1px solid #E2DED6;
+}
+
+.ce_li02 span {
+    float      : left;
+    margin-left: 12px;
+    line-height: 14px;
+    font-size  : 12px;
+}
+
+.ce_li02 .ce_p01 {
+    color      : #BB3343;
+    font-weight: bold;
+}
+
+/*-------------- 左侧顶位部分结束------------ */
+
+/*-------------- 右侧定位部分开始 ------------*/
+.box_youce {
+    position: fixed;
+    top     : 100px;
+    right   : 0;
+}
+
+.box_youce .youce_01 i {
+    margin    : 0 auto;
+    display   : block;
+    width     : 28px;
+    height    : 29px;
+    background: url(../images/youcebeijingtu.png) no-repeat 0 -297px;
+}
+
+.youce_02 {
+    width           : 72px;
+    height          : 68px;
+    text-align      : center;
+    padding-top     : 14px;
+    background-color: #fff;
+}
+
+.youce_02:hover span {
+    color: #b4a078;
+}
+
+.youce_01 span {
+    display   : block;
+    font-size : 14px;
+    color     : #666;
+    margin-top: 8px;
+}
+
+.youce_03 {
+    width           : 72px;
+    height          : 138px;
+    border-top      : 1px solid #eaeaea;
+    border-bottom   : 1px solid #eaeaea;
+    background-color: #ffffff;
+    text-align      : center;
+}
+
+.youce_03 img {
+    width : 70px;
+    height: 70px;
+}
+
+.youce_03 p {
+    font-size: 12px;
+}
+
+.youce_03 p:nth-of-type(n+2) {
+    color: #BC3B3B;
+}
+
+.box_youce .youce_04 {
+    width        : 72px;
+    height       : 63px;
+    padding-top  : 14px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.box_youce .youce_04 i {
+    background         : url(../images/youcebeijingtu.png)no-repeat;
+    background-position: 0 -425px;
+    height             : 26px;
+    width              : 26px;
+}
+
+.box_youce .youce_05 {
+    border: none;
+}
+
+/*-------------- 右侧定位部分结束 ------------*/
